@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UITableViewController {
 
     // MARK: outlets
     
@@ -95,6 +95,8 @@ class ConversionViewController: UIViewController {
             self.milimeterInput = Double(number)
         }
         milimeterTextField.delegate = milimeterTextFieldDelegate
+        
+        title = "치수 변환"
     }
 
     // MARK: convert unit

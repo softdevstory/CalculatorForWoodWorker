@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalculatorViewController: UIViewController {
+class CalculatorViewController: UITableViewController {
 
     // MARK: UI outlet
     
@@ -95,6 +95,8 @@ class CalculatorViewController: UIViewController {
             self.pricePerSai = Int(number)
         }
         pricePerSaiTextField.delegate = pricePerSaiTextFieldDelegate
+        
+        title = "나무 가격 계산기"
     }
 
     // MARK: calculation
