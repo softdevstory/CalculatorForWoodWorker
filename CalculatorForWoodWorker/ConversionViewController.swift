@@ -106,9 +106,10 @@ class ConversionViewController: UITableViewController {
         milimeterOutput = (feetInput * 304.8) + (inchInput * 25.4)
     }
     
+    // 1524 76.2
     func convertToFeetAndInch() {
         // 1 feet = 304.8mm, 1 inch = 25.4mm
-        feetOutput = round(milimeterInput / 304.8)
-        inchOutput = (milimeterInput - round(milimeterInput / 304.8)) / 25.4
+        feetOutput = floor(milimeterInput / 304.8)
+        inchOutput = (milimeterInput - (feetOutput * 304.8)) / 25.4
     }
 }

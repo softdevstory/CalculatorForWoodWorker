@@ -282,11 +282,11 @@
             </objects>
             <point key="canvasLocation" x="1378" y="1346"/>
         </scene>
-        <!--Conversion-->
+        <!--치수 변환-->
         <scene sceneID="G2y-HN-OUK">
             <objects>
                 <navigationController id="6nB-HW-NPx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Conversion" image="conversion" id="EJg-Qa-6Cy"/>
+                    <tabBarItem key="tabBarItem" title="치수 변환" image="conversion" id="EJg-Qa-6Cy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="By2-uv-Kl8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -308,7 +308,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="입력" id="sbb-Dp-8Ay">
+                            <tableViewSection headerTitle="나무 크기" id="sbb-Dp-8Ay">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="gJW-XF-Uj1">
                                         <rect key="frame" x="0.0" y="114" width="600" height="44"/>
@@ -581,7 +581,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="9GA-xU-M7Z">
+                            <tableViewSection headerTitle="재(材)" id="9GA-xU-M7Z">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MUB-Ho-Jsx">
                                         <rect key="frame" x="0.0" y="114" width="600" height="44"/>
@@ -609,7 +609,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-2" id="xfN-Fm-ajR">
+                            <tableViewSection headerTitle="Feet, inch, milimeter" id="xfN-Fm-ajR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="z7M-5y-WdI">
                                         <rect key="frame" x="0.0" y="297" width="600" height="44"/>
@@ -637,6 +637,34 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="제작자" id="QLc-6H-ZFB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7Cn-nX-JCr">
+                                        <rect key="frame" x="0.0" y="480" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Cn-nX-JCr" id="I9l-TK-Dl2">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zp4-Sf-2uB">
+                                        <rect key="frame" x="0.0" y="524" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zp4-Sf-2uB" id="Dgb-89-Q1T">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PgS-Uf-Ao3">
+                                        <rect key="frame" x="0.0" y="568" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PgS-Uf-Ao3" id="IgY-6T-sts">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="3kI-GO-p6t" id="KdZ-2B-ncy"/>
@@ -648,11 +676,11 @@
             </objects>
             <point key="canvasLocation" x="2201" y="1027"/>
         </scene>
-        <!--Calculator-->
+        <!--나무 가격 계산기-->
         <scene sceneID="zBT-Hx-3kC">
             <objects>
                 <navigationController id="fBj-hn-kol" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calculator" image="calculator" id="3OA-QF-3gr"/>
+                    <tabBarItem key="tabBarItem" title="나무 가격 계산기" image="calculator" id="3OA-QF-3gr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IR4-AC-IeI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
