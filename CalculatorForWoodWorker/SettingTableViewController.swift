@@ -2,7 +2,7 @@
 //  SettingTableViewController.swift
 //  CalculatorForWoodWorker
 //
-//  Created by HS Song on 2016. 3. 2..
+//  Created by developer@softdevstory.net on 2016. 3. 2..
 //  Copyright © 2016년 softdevstory. All rights reserved.
 //
 

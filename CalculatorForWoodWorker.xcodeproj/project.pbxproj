@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A41204F11C8736F000055388 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F01C8736F000055388 /* SettingTableViewController.swift */; };
 		A41204F31C87CC1F00055388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41204F21C87CC1F00055388 /* Assets.xcassets */; };
+		A41204F51C87CD2600055388 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F41C87CD2600055388 /* LicenseViewController.swift */; };
+		A41204F71C87CDA700055388 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F61C87CDA700055388 /* AboutViewController.swift */; };
 		A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0D21C856CEF0039430A /* AppDelegate.swift */; };
 		A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0D61C856CEF0039430A /* Main.storyboard */; };
 		A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		A41204F01C8736F000055388 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A41204F21C87CC1F00055388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A41204F41C87CD2600055388 /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
+		A41204F61C87CDA700055388 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A4EEF0CF1C856CEF0039430A /* CalculatorForWoodWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorForWoodWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EEF0D21C856CEF0039430A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EEF0D71C856CEF0039430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,7 +67,9 @@
 				A41204F21C87CC1F00055388 /* Assets.xcassets */,
 				A4EEF0D21C856CEF0039430A /* AppDelegate.swift */,
 				A4EEF0D61C856CEF0039430A /* Main.storyboard */,
+				A41204F61C87CDA700055388 /* AboutViewController.swift */,
 				A41204F01C8736F000055388 /* SettingTableViewController.swift */,
+				A41204F41C87CD2600055388 /* LicenseViewController.swift */,
 				A4EEF0E61C868EAB0039430A /* ConversionViewController.swift */,
 				A4EEF0E41C857F510039430A /* CalculatorViewController.swift */,
 				A4EEF0E81C8697DF0039430A /* TextFieldDelegateForNumber.swift */,
@@ -148,7 +154,9 @@
 				A4EEF0E51C857F510039430A /* CalculatorViewController.swift in Sources */,
 				A4EEF0E71C868EAB0039430A /* ConversionViewController.swift in Sources */,
 				A4EEF0E91C8697DF0039430A /* TextFieldDelegateForNumber.swift in Sources */,
+				A41204F71C87CDA700055388 /* AboutViewController.swift in Sources */,
 				A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */,
+				A41204F51C87CD2600055388 /* LicenseViewController.swift in Sources */,
 				A41204F11C8736F000055388 /* SettingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +270,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CalculatorForWoodWorker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.softdevstory.CalculatorForWoodWorker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CalculatorForWoodWorker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.softdevstory.CalculatorForWoodWorker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
