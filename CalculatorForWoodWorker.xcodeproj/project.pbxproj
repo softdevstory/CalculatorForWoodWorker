@@ -11,6 +11,7 @@
 		A41204F31C87CC1F00055388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41204F21C87CC1F00055388 /* Assets.xcassets */; };
 		A41204F51C87CD2600055388 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F41C87CD2600055388 /* LicenseViewController.swift */; };
 		A41204F71C87CDA700055388 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F61C87CDA700055388 /* AboutViewController.swift */; };
+		A41204FA1C87F87000055388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A41204FC1C87F87000055388 /* InfoPlist.strings */; };
 		A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0D21C856CEF0039430A /* AppDelegate.swift */; };
 		A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0D61C856CEF0039430A /* Main.storyboard */; };
 		A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 		A41204F21C87CC1F00055388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41204F41C87CD2600055388 /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 		A41204F61C87CDA700055388 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A41204FB1C87F87000055388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4EEF0CF1C856CEF0039430A /* CalculatorForWoodWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorForWoodWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EEF0D21C856CEF0039430A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EEF0D71C856CEF0039430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				A4EEF0E81C8697DF0039430A /* TextFieldDelegateForNumber.swift */,
 				A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */,
 				A4EEF0DE1C856CEF0039430A /* Info.plist */,
+				A41204FC1C87F87000055388 /* InfoPlist.strings */,
 			);
 			path = CalculatorForWoodWorker;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */,
+				A41204FA1C87F87000055388 /* InfoPlist.strings in Resources */,
 				A41204F31C87CC1F00055388 /* Assets.xcassets in Resources */,
 				A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */,
 			);
@@ -164,6 +168,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A41204FC1C87F87000055388 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A41204FB1C87F87000055388 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		A4EEF0D61C856CEF0039430A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
