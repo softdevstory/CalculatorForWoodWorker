@@ -112,4 +112,8 @@ class CalculatorViewController: UITableViewController {
     func calculatePrice() {
         price = Int(volumn * Double(pricePerSai))
     }
+    
+    @IBAction func done(segue: UIStoryboardSegue) {
+        
+    }
 }

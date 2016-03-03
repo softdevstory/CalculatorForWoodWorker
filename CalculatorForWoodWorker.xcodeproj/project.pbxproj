@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41204F11C8736F000055388 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F01C8736F000055388 /* SettingTableViewController.swift */; };
+		A41204F31C87CC1F00055388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41204F21C87CC1F00055388 /* Assets.xcassets */; };
 		A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0D21C856CEF0039430A /* AppDelegate.swift */; };
 		A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0D61C856CEF0039430A /* Main.storyboard */; };
-		A4EEF0DA1C856CEF0039430A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0D91C856CEF0039430A /* Assets.xcassets */; };
 		A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */; };
 		A4EEF0E51C857F510039430A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0E41C857F510039430A /* CalculatorViewController.swift */; };
 		A4EEF0E71C868EAB0039430A /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0E61C868EAB0039430A /* ConversionViewController.swift */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A41204F01C8736F000055388 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		A41204F21C87CC1F00055388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4EEF0CF1C856CEF0039430A /* CalculatorForWoodWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorForWoodWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EEF0D21C856CEF0039430A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EEF0D71C856CEF0039430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A4EEF0D91C856CEF0039430A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4EEF0DC1C856CEF0039430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4EEF0DE1C856CEF0039430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EEF0E41C857F510039430A /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
@@ -58,12 +60,13 @@
 		A4EEF0D11C856CEF0039430A /* CalculatorForWoodWorker */ = {
 			isa = PBXGroup;
 			children = (
+				A41204F21C87CC1F00055388 /* Assets.xcassets */,
 				A4EEF0D21C856CEF0039430A /* AppDelegate.swift */,
 				A4EEF0D61C856CEF0039430A /* Main.storyboard */,
+				A41204F01C8736F000055388 /* SettingTableViewController.swift */,
 				A4EEF0E61C868EAB0039430A /* ConversionViewController.swift */,
 				A4EEF0E41C857F510039430A /* CalculatorViewController.swift */,
 				A4EEF0E81C8697DF0039430A /* TextFieldDelegateForNumber.swift */,
-				A4EEF0D91C856CEF0039430A /* Assets.xcassets */,
 				A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */,
 				A4EEF0DE1C856CEF0039430A /* Info.plist */,
 			);
@@ -130,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */,
-				A4EEF0DA1C856CEF0039430A /* Assets.xcassets in Resources */,
+				A41204F31C87CC1F00055388 /* Assets.xcassets in Resources */,
 				A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +149,7 @@
 				A4EEF0E71C868EAB0039430A /* ConversionViewController.swift in Sources */,
 				A4EEF0E91C8697DF0039430A /* TextFieldDelegateForNumber.swift in Sources */,
 				A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */,
+				A41204F11C8736F000055388 /* SettingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +299,7 @@
 				A4EEF0E31C856CEF0039430A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

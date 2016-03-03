@@ -112,4 +112,9 @@ class ConversionViewController: UITableViewController {
         feetOutput = floor(milimeterInput / 304.8)
         inchOutput = (milimeterInput - (feetOutput * 304.8)) / 25.4
     }
+    
+    @IBAction func done(segue: UIStoryboardSegue) {
+        
+    }
+
 }
