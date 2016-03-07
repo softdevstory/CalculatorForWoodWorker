@@ -76,21 +76,25 @@ class CalculatorViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        widthTextField.accessibilityIdentifier = "woodWidth"
         widthTextFieldDelegate = TextFieldDelegateForNumber() { number in
             self.width = Double(number)
         }
         widthTextField.delegate = widthTextFieldDelegate
         
+        heightTextField.accessibilityIdentifier = "woodHeight"
         heightTextFieldDelegate = TextFieldDelegateForNumber() { number in
             self.height = Double(number)
         }
         heightTextField.delegate = heightTextFieldDelegate
         
+        lengthTextField.accessibilityIdentifier = "woodLength"
         lengthTextFieldDelegate = TextFieldDelegateForNumber() { number in
             self.length = Double(number)
         }
         lengthTextField.delegate = lengthTextFieldDelegate
-        
+
+        pricePerSaiTextField.accessibilityIdentifier = "woodPrice"
         pricePerSaiTextFieldDelegate = TextFieldDelegateForNumber() { number in
             self.pricePerSai = Int(number)
         }

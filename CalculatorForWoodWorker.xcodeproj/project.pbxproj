@@ -12,6 +12,8 @@
 		A41204F51C87CD2600055388 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F41C87CD2600055388 /* LicenseViewController.swift */; };
 		A41204F71C87CDA700055388 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F61C87CDA700055388 /* AboutViewController.swift */; };
 		A41204FA1C87F87000055388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A41204FC1C87F87000055388 /* InfoPlist.strings */; };
+		A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */; };
+		A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */; };
 		A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0D21C856CEF0039430A /* AppDelegate.swift */; };
 		A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0D61C856CEF0039430A /* Main.storyboard */; };
 		A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */; };
@@ -20,12 +22,26 @@
 		A4EEF0E91C8697DF0039430A /* TextFieldDelegateForNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0E81C8697DF0039430A /* TextFieldDelegateForNumber.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A47A69491C8D0E750066AD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4EEF0C71C856CEF0039430A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4EEF0CE1C856CEF0039430A;
+			remoteInfo = CalculatorForWoodWorker;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A41204F01C8736F000055388 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A41204F21C87CC1F00055388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41204F41C87CD2600055388 /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 		A41204F61C87CDA700055388 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A41204FB1C87F87000055388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A47A69441C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorForWoodWorkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorForWoodWorkerUITests.swift; sourceTree = "<group>"; };
+		A47A69481C8D0E750066AD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		A4EEF0CF1C856CEF0039430A /* CalculatorForWoodWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorForWoodWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EEF0D21C856CEF0039430A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EEF0D71C856CEF0039430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A47A69411C8D0E750066AD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4EEF0CC1C856CEF0039430A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +70,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A47A69451C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */,
+				A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */,
+				A47A69481C8D0E750066AD78 /* Info.plist */,
+			);
+			path = CalculatorForWoodWorkerUITests;
+			sourceTree = "<group>";
+		};
 		A4EEF0C61C856CEF0039430A = {
 			isa = PBXGroup;
 			children = (
 				A4EEF0D11C856CEF0039430A /* CalculatorForWoodWorker */,
+				A47A69451C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */,
 				A4EEF0D01C856CEF0039430A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				A4EEF0CF1C856CEF0039430A /* CalculatorForWoodWorker.app */,
+				A47A69441C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +120,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A47A69431C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47A694B1C8D0E750066AD78 /* Build configuration list for PBXNativeTarget "CalculatorForWoodWorkerUITests" */;
+			buildPhases = (
+				A47A69401C8D0E750066AD78 /* Sources */,
+				A47A69411C8D0E750066AD78 /* Frameworks */,
+				A47A69421C8D0E750066AD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47A694A1C8D0E750066AD78 /* PBXTargetDependency */,
+			);
+			name = CalculatorForWoodWorkerUITests;
+			productName = CalculatorForWoodWorkerUITests;
+			productReference = A47A69441C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A4EEF0CE1C856CEF0039430A /* CalculatorForWoodWorker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4EEF0E11C856CEF0039430A /* Build configuration list for PBXNativeTarget "CalculatorForWoodWorker" */;
@@ -112,6 +165,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = softdevstory;
 				TargetAttributes = {
+					A47A69431C8D0E750066AD78 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A4EEF0CE1C856CEF0039430A;
+					};
 					A4EEF0CE1C856CEF0039430A = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = MGW797GVB2;
@@ -132,11 +189,19 @@
 			projectRoot = "";
 			targets = (
 				A4EEF0CE1C856CEF0039430A /* CalculatorForWoodWorker */,
+				A47A69431C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A47A69421C8D0E750066AD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4EEF0CD1C856CEF0039430A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +216,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A47A69401C8D0E750066AD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */,
+				A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4EEF0CB1C856CEF0039430A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +240,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A47A694A1C8D0E750066AD78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4EEF0CE1C856CEF0039430A /* CalculatorForWoodWorker */;
+			targetProxy = A47A69491C8D0E750066AD78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A41204FC1C87F87000055388 /* InfoPlist.strings */ = {
@@ -195,6 +277,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A47A694C1C8D0E750066AD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CalculatorForWoodWorkerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.softdevstory.CalculatorForWoodWorkerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CalculatorForWoodWorker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A47A694D1C8D0E750066AD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CalculatorForWoodWorkerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.softdevstory.CalculatorForWoodWorkerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CalculatorForWoodWorker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		A4EEF0DF1C856CEF0039430A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +413,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A47A694B1C8D0E750066AD78 /* Build configuration list for PBXNativeTarget "CalculatorForWoodWorkerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47A694C1C8D0E750066AD78 /* Debug */,
+				A47A694D1C8D0E750066AD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A4EEF0CA1C856CEF0039430A /* Build configuration list for PBXProject "CalculatorForWoodWorker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

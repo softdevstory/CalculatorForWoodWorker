@@ -81,16 +81,19 @@ class ConversionViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        feetTextField.accessibilityIdentifier = "feetInput"
         feetTextFieldDelegate = TextFieldDelegateForNumber() { number in
             self.feetInput = Double(number)
         }
         feetTextField.delegate = feetTextFieldDelegate
 
+        inchTextField.accessibilityIdentifier = "inchInput"
         inchTextFieldDelegate = TextFieldDelegateForNumber() { number in
             self.inchInput = Double(number)
         }
         inchTextField.delegate = inchTextFieldDelegate
-        
+
+        milimeterTextField.accessibilityIdentifier = "milimeterInput"
         milimeterTextFieldDelegate = TextFieldDelegateForNumber() { number in
             self.milimeterInput = Double(number)
         }
