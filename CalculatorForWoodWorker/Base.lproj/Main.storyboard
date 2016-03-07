@@ -760,6 +760,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="8dH-Hk-c0X" id="MuO-3n-dm5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klY-LM-NVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -882,6 +885,6 @@ Public Domain Dedication</string>
         <image name="settings" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="au9-AW-dhg"/>
+        <segue reference="mYn-OW-LZm"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,10 +10,17 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
+    @IBOutlet weak var versionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "About"
+
+        let versionString = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"]
+        let buildString = NSBundle.mainBundle().infoDictionary!["CFBundleVersion"]
+        
+        versionLabel.text = "목공 계산기 \(versionString!) (Build \(buildString!))"
     }
 }
 
@@ -33,6 +40,8 @@ extension AboutViewController: UITableViewDataSource {
             print("wrong indexPath.row \(indexPath.row)")
             assert(false)
         }
+        
+        return tableView.dequeueReusableCellWithIdentifier("support")!
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
