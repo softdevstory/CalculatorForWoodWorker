@@ -163,3 +163,6 @@ $('.detail .carousel').carousel({
   interval: 4000
 })
 
+$('.app-store').on('click', function (e) {
+  window.open("https://itunes.apple.com/kr/app/moggong-gyesangi/id1089823978?mt=8");
+})
