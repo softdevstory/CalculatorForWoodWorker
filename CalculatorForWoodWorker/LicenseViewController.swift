@@ -16,20 +16,20 @@ class LicenseViewController: UITableViewController {
         title = "라이센스"
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        switch indexPath.row {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch (indexPath as NSIndexPath).row {
         case 0:
-            let webURL = NSURL(string: "https://icons8.com")!
-            if UIApplication.sharedApplication().canOpenURL(webURL) {
-                UIApplication.sharedApplication().openURL(webURL)
+            let webURL = URL(string: "https://icons8.com")!
+            if UIApplication.shared.canOpenURL(webURL) {
+                UIApplication.shared.openURL(webURL)
             }
         case 1:
-            let webURL = NSURL(string: "https://pixabay.com/")!
-            if UIApplication.sharedApplication().canOpenURL(webURL) {
-                UIApplication.sharedApplication().openURL(webURL)
+            let webURL = URL(string: "https://pixabay.com/")!
+            if UIApplication.shared.canOpenURL(webURL) {
+                UIApplication.shared.openURL(webURL)
             }
         default:
-            print("Wrong indexPath.row \(indexPath.row)")
+            print("Wrong indexPath.row \((indexPath as NSIndexPath).row)")
             assert(false)
         }
     }

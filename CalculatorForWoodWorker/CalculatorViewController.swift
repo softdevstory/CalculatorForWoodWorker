@@ -54,9 +54,9 @@ class CalculatorViewController: UITableViewController {
     var volumn: Double = 0 {
         didSet {
             if let label = volumnLabel {
-                let formatter = NSNumberFormatter()
-                formatter.numberStyle = .DecimalStyle
-                label.text = formatter.stringFromNumber(volumn)
+                let formatter = NumberFormatter()
+                formatter.numberStyle = .decimal
+                label.text = formatter.string(from: NSNumber(value: volumn))
             }
         }
     }
@@ -64,9 +64,9 @@ class CalculatorViewController: UITableViewController {
     var price = 0 {
         didSet {
             if let label = priceLabel {
-                let formatter = NSNumberFormatter()
-                formatter.numberStyle = .DecimalStyle
-                label.text = formatter.stringFromNumber(price)
+                let formatter = NumberFormatter()
+                formatter.numberStyle = .decimal
+                label.text = formatter.string(from: NSNumber(value: price))
             }
         }
     }
@@ -117,7 +117,7 @@ class CalculatorViewController: UITableViewController {
         price = Int(volumn * Double(pricePerSai))
     }
     
-    @IBAction func done(segue: UIStoryboardSegue) {
+    @IBAction func done(_ segue: UIStoryboardSegue) {
         
     }
 }

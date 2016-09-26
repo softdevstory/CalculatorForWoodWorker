@@ -10,15 +10,15 @@ import UIKit
 
 class TextFieldDelegateForNumber: NSObject, UITextFieldDelegate {
     
-    var updateNumber: (number: NSNumber) -> Void
+    var updateNumber: (_ number: NSNumber) -> Void
     
-    init(updateNumber: (number: NSNumber) -> Void) {
+    init(updateNumber: @escaping (_ number: NSNumber) -> Void) {
         self.updateNumber = updateNumber
         
         super.init()
     }
     
-    func checkValidNumber(string: String) -> Bool {
+    func checkValidNumber(_ string: String) -> Bool {
         if let _ = Double(string) {
             return true
         }
@@ -28,13 +28,13 @@ class TextFieldDelegateForNumber: NSObject, UITextFieldDelegate {
     
     // MARK: UITextFieldDelegate
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        var newString = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        var newString = (textField.text! as NSString).replacingCharacters(in: range, with: string)
         if newString == "" {
             newString = "0"
         }
-        let numberString = newString.stringByReplacingOccurrencesOfString(",", withString: "")
+        let numberString = newString.replacingOccurrences(of: ",", with: "")
 
         guard checkValidNumber(numberString) else {
             return false
@@ -42,22 +42,22 @@ class TextFieldDelegateForNumber: NSObject, UITextFieldDelegate {
 
         let number = Double(numberString) ?? 0
         
-        let formatter = NSNumberFormatter()
-        formatter.numberStyle = .DecimalStyle
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
         
         if numberString.hasSuffix(".") {
             formatter.positiveFormat = "#,##0.###"
-            textField.text = formatter.stringFromNumber(number)! + "."
+            textField.text = formatter.string(from: NSNumber(value: number))! + "."
         } else {
-            if numberString.containsString(".") {
+            if numberString.contains(".") {
                 formatter.positiveFormat = "#,##0.0##"
             } else {
                 formatter.positiveFormat = "#,##0.###"
             }
-            textField.text = formatter.stringFromNumber(number)
+            textField.text = formatter.string(from: NSNumber(value: number))
         }
         
-        updateNumber(number: number)
+        updateNumber(NSNumber(value: number))
 
         return false
     }

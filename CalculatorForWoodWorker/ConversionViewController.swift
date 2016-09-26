@@ -43,9 +43,9 @@ class ConversionViewController: UITableViewController {
     var milimeterOutput: Double = 0 {
         didSet {
             if let label = milimeterLabel {
-                let formatter = NSNumberFormatter()
-                formatter.numberStyle = .DecimalStyle
-                label.text = formatter.stringFromNumber(milimeterOutput)
+                let formatter = NumberFormatter()
+                formatter.numberStyle = .decimal
+                label.text = formatter.string(from: NSNumber(value: milimeterOutput))
             }
         }
     }
@@ -59,9 +59,9 @@ class ConversionViewController: UITableViewController {
     var feetOutput: Double = 0 {
         didSet {
             if let label = feetLabel {
-                let formatter = NSNumberFormatter()
-                formatter.numberStyle = .DecimalStyle
-                label.text = formatter.stringFromNumber(feetOutput)
+                let formatter = NumberFormatter()
+                formatter.numberStyle = .decimal
+                label.text = formatter.string(from: NSNumber(value: feetOutput))
             }
         }
     }
@@ -69,9 +69,9 @@ class ConversionViewController: UITableViewController {
     var inchOutput: Double = 0 {
         didSet {
             if let label = inchLabel {
-                let formatter = NSNumberFormatter()
-                formatter.numberStyle = .DecimalStyle
-                label.text = formatter.stringFromNumber(inchOutput)
+                let formatter = NumberFormatter()
+                formatter.numberStyle = .decimal
+                label.text = formatter.string(from: NSNumber(value: inchOutput))
             }
         }
     }
@@ -116,7 +116,7 @@ class ConversionViewController: UITableViewController {
         inchOutput = (milimeterInput - (feetOutput * 304.8)) / 25.4
     }
     
-    @IBAction func done(segue: UIStoryboardSegue) {
+    @IBAction func done(_ segue: UIStoryboardSegue) {
         
     }
 

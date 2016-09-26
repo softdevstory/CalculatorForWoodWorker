@@ -28,7 +28,7 @@ class CalculatorForWoodWorkerUITests: XCTestCase {
     func testCalculator() {
         let app = XCUIApplication()
         
-        let textFieldQuery = app.descendantsMatchingType(.TextField)
+        let textFieldQuery = app.descendants(matching: .textField)
         
         let widthTextField = textFieldQuery["woodWidth"]
         widthTextField.tap()
@@ -46,13 +46,13 @@ class CalculatorForWoodWorkerUITests: XCTestCase {
         priceTextField.tap()
         priceTextField.typeText("15000")
         
-        let tableQuery = app.descendantsMatchingType(.Table)
+        let tableQuery = app.descendants(matching: .table)
         let table = tableQuery.element
         table.swipeDown()
         
-        let expectation = expectationWithDescription("swipe")
+        let expectation = self.expectation(description: "swipe")
         expectation.fulfill()
-        waitForExpectationsWithTimeout(5, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
 
         snapshot("0Calculator")
     }
@@ -60,9 +60,9 @@ class CalculatorForWoodWorkerUITests: XCTestCase {
     func testConversion() {
         let app = XCUIApplication()
         
-        app.tabBars.buttons.elementBoundByIndex(1).tap()
+        app.tabBars.buttons.element(boundBy: 1).tap()
 
-        let textFieldQuery = app.descendantsMatchingType(.TextField)
+        let textFieldQuery = app.descendants(matching: .textField)
         
         let feetTextField = textFieldQuery["feetInput"]
         feetTextField.tap()
@@ -76,13 +76,13 @@ class CalculatorForWoodWorkerUITests: XCTestCase {
         milimeterTextField.tap()
         milimeterTextField.typeText("330.2")
         
-        let tableQuery = app.descendantsMatchingType(.Table)
+        let tableQuery = app.descendants(matching: .table)
         let table = tableQuery.element
         table.swipeDown()
         
-        let expectation = expectationWithDescription("swipe")
+        let expectation = self.expectation(description: "swipe")
         expectation.fulfill()
-        waitForExpectationsWithTimeout(5, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
         
         snapshot("0Conversion")
     }
