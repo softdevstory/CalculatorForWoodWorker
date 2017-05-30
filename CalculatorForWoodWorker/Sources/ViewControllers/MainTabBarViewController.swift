@@ -38,6 +38,15 @@ enum TabBar {
             return UIImage(named: "conversion")
         }
     }
+    
+    var rootViewController: UIViewController {
+        switch self {
+        case .saiCalculator:
+            return SaiCalculatorViewController()
+        case .inchMeterCalculator:
+            return InchMeterCalculatorViewController()
+        }
+    }
 }
 
 class MainTabBarViewController: UITabBarController {
@@ -45,13 +54,13 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let vc1 = UINavigationController()
+        let vc1 = UINavigationController(rootViewController: TabBar.saiCalculator.rootViewController)
         vc1.tabBarItem = UITabBarItem(
             title: TabBar.saiCalculator.title,
             image: TabBar.saiCalculator.image,
             tag: TabBar.saiCalculator.tag)
         
-        let vc2 = UINavigationController()
+        let vc2 = UINavigationController(rootViewController: TabBar.inchMeterCalculator.rootViewController)
         vc2.tabBarItem = UITabBarItem(
             title: TabBar.inchMeterCalculator.title,
             image: TabBar.inchMeterCalculator.image,

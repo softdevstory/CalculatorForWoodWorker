@@ -14,6 +14,9 @@ target 'CalculatorForWoodWorker' do
   #pod 'RxSwift'
   #pod 'RxCocoa'
 
+  # Etc
+  pod 'Then'
+
   target 'CalculatorForWoodWorkerUITests' do
     inherit! :search_paths
     # Pods for testing

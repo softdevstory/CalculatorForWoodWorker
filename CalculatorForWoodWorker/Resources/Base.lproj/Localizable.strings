@@ -6,5 +6,30 @@
   Copyright © 2017년 softdevstory. All rights reserved.
 */
 
+/* Tab bar controller */
 "SaiCalculatorTabBarTitle"="Wood Price Calculator";
 "InchMeterCalculatorTabBarTitle"="Unit Conversion Calculator";
+
+/* Sai calculator navigation controller */
+"SaiCalculatorNavigationTitle"="Wood Price Calculator";
+"WoodDimension"="Wood dimension";
+"CalculationResult"="Calculation result";
+"width"="width";
+"height"="height";
+"length"="length";
+"mm"="mm";
+"pricePerSai"="Price per sai";
+"won"="Won";
+"totalVolume"="Total volume";
+"sai"="sai";
+"totalPrice"="Total price";
+
+/* Inch meter calculator navigation controller */
+"InchMeterCalculatorNavigationTitle"="Unit Conversion Calculator";
+"FeetInch"="Feet,Inch";
+"Milimeter"="Milimeter";
+"feet"="feet";
+"inch"="inch";
+"milimeter"="milimeter";
+"′"="′";
+"″"="″";

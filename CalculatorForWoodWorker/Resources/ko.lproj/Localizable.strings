@@ -6,6 +6,31 @@
   Copyright © 2017년 softdevstory. All rights reserved.
 */
 
-
+/* Tab bar controller */
 "SaiCalculatorTabBarTitle"="나무 가격 계산기";
 "InchMeterCalculatorTabBarTitle"="치수 변환";
+
+/* Sai calculator navigation controller */
+"SaiCalculatorNavigationTitle"="나무 가격 계산기";
+"WoodDimension"="나무 크기";
+"CalculationResult"="계산 결과";
+"width"="가로";
+"height"="세로";
+"length"="길이";
+"mm"="mm";
+"pricePerSai"="1재(材)당 가격";
+"won"="원";
+"totalVolume"="총 크기";
+"sai"="재(材)";
+"totalPrice"="총 가격";
+
+/* Inch meter calculator navigation controller */
+"InchMeterCalculatorNavigationTitle"="치수 변환";
+"FeetInch"="피트,인치";
+"Milimeter"="밀리미터";
+"feet"="피트";
+"inch"="인치";
+"milimeter"="밀리미터";
+"′"="′";
+"″"="″";
+
