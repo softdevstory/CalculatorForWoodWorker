@@ -7,6 +7,13 @@ target 'CalculatorForWoodWorker' do
 
   # Pods for CalculatorForWoodWorker
 
+  # UI
+  pod 'SnapKit'
+
+  # Rx
+  #pod 'RxSwift'
+  #pod 'RxCocoa'
+
   target 'CalculatorForWoodWorkerUITests' do
     inherit! :search_paths
     # Pods for testing

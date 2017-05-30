@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  CalculatorForWoodWorker
+
+  Created by HS Song on 2017. 5. 30..
+  Copyright © 2017년 softdevstory. All rights reserved.
+*/
+
+
+"SaiCalculatorTabBarTitle"="나무 가격 계산기";
+"InchMeterCalculatorTabBarTitle"="치수 변환";
