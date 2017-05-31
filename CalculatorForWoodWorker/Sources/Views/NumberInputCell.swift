@@ -10,6 +10,8 @@ import UIKit
 
 import Then
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class NumberInputCell: UITableViewCell, LabelCellProtocol {
 
@@ -27,6 +29,7 @@ class NumberInputCell: UITableViewCell, LabelCellProtocol {
     private let textField = UITextField().then {
         $0.textAlignment = .right
         $0.borderStyle = .roundedRect
+        $0.keyboardType = .decimalPad
     }
     
     private let postLabel = UILabel().then {
@@ -59,6 +62,7 @@ class NumberInputCell: UITableViewCell, LabelCellProtocol {
         stackView.addArrangedSubview(prevLabel)
         
         textField.text = "0"
+
         stackView.addArrangedSubview(textField)
 
         stackView.addArrangedSubview(postLabel)
