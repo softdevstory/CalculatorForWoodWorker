@@ -33,3 +33,15 @@
 "milimeter"="milimeter";
 "′"="′";
 "″"="″";
+
+/* Settings view controller */
+"settings"="Settings";
+"About"="About";
+"Licenses"="Licenses";
+"contact"="Contact";
+"softdevstory.net"="softdevstory.net";
+"SnapKit"="SnapKit";
+"RxSwift, RxCocoa"="RxSwift, RxCocoa";
+"Then"="Then";
+"Icons from icons8"="Icons from icons8";
+"Images from pixabay"="Images from pixabay";

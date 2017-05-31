@@ -11,8 +11,8 @@ target 'CalculatorForWoodWorker' do
   pod 'SnapKit'
 
   # Rx
-  #pod 'RxSwift'
-  #pod 'RxCocoa'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   # Etc
   pod 'Then'

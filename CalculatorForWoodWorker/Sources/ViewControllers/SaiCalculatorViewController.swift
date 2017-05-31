@@ -10,9 +10,13 @@ import UIKit
 
 import Then
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class SaiCalculatorViewController: UIViewController {
 
+    private let bag = DisposeBag()
+    
     private var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -20,6 +24,13 @@ class SaiCalculatorViewController: UIViewController {
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage(named: "settings"), style: .plain, target: nil, action: nil)
+
+        navigationItem.rightBarButtonItem?.rx.tap
+            .subscribe(onNext: { _ in
+                let vc = UINavigationController(rootViewController: SettingViewController())
+                self.present(vc, animated: true, completion: nil)
+            })
+            .addDisposableTo(bag)
         
         tableView = UITableView(frame: view.frame, style: .grouped).then {
             $0.separatorStyle = .none
