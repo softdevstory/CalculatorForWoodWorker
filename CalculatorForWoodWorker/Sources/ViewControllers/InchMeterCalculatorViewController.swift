@@ -15,9 +15,11 @@ import RxCocoa
 
 class InchMeterCalculatorViewController: UIViewController {
 
-    private let bag = DisposeBag()
+    fileprivate let bag = DisposeBag()
     
     private var tableView: UITableView!
+    
+    fileprivate var viewModel = InchMeterCalculatorViewModel()
     
     override func viewDidLoad() {
 
@@ -106,6 +108,44 @@ extension InchMeterCalculatorViewController: UITableViewDataSource {
         labels.name = cellProperties[indexPath.section][indexPath.row][0].localized
         labels.unit = cellProperties[indexPath.section][indexPath.row][1].localized
 
+        switch (indexPath.section, indexPath.row) {
+        case (0, 0):
+            (cell as! NumberInputCell).number
+                .asObservable()
+                .bind(to: viewModel.feet)
+                .addDisposableTo(bag)
+        case (0, 1):
+            (cell as! NumberInputCell).number
+                .asObservable()
+                .bind(to: viewModel.inch)
+                .addDisposableTo(bag)
+
+        case (0, 2):
+            viewModel.milimeterResult.asObservable()
+                .subscribe(onNext: { value in
+                    (cell as! CalculationResultCell).number = value
+                })
+                .addDisposableTo(bag)
+        case (1, 0):
+            (cell as! NumberInputCell).number
+                .asObservable()
+                .bind(to: viewModel.milimeter)
+                .addDisposableTo(bag)
+        case (1, 1):
+          viewModel.feetResult.asObservable()
+                .subscribe(onNext: { value in
+                    (cell as! CalculationResultCell).number = value
+                })
+                .addDisposableTo(bag)
+        case (1, 2):
+          viewModel.inchResult.asObservable()
+                .subscribe(onNext: { value in
+                    (cell as! CalculationResultCell).number = value
+                })
+                .addDisposableTo(bag)
+        default: break
+        }
+        
         return cell
     }
 }

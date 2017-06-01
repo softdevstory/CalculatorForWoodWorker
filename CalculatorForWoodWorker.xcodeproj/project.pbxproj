@@ -27,6 +27,9 @@
 		8B7D07151EDE6C9800151774 /* SaiCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */; };
 		8B7D07181EDE93FA00151774 /* SaiCalculatorViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07171EDE93FA00151774 /* SaiCalculatorViewModelTest.swift */; };
 		8B7D07191EDE951500151774 /* SaiCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */; };
+		8B7D071E1EDFC18100151774 /* InchMeterCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */; };
+		8B7D07201EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */; };
+		8B7D07211EDFC46E00151774 /* InchMeterCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */; };
 		A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */; };
 		A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */; };
 		ED1797F5E380022762485F3C /* Pods_CalculatorForWoodWorkerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8791A3ABEE3CD7ABCD5095CE /* Pods_CalculatorForWoodWorkerUITests.framework */; };
@@ -67,6 +70,8 @@
 		8B7D07111EDD4E5F00151774 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaiCalculatorViewModel.swift; sourceTree = "<group>"; };
 		8B7D07171EDE93FA00151774 /* SaiCalculatorViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaiCalculatorViewModelTest.swift; sourceTree = "<group>"; };
+		8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InchMeterCalculatorViewModel.swift; sourceTree = "<group>"; };
+		8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InchMeterCalculatorViewModelTests.swift; sourceTree = "<group>"; };
 		8C4E7D461D8173720181FD1F /* Pods-CalculatorForWoodWorker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorForWoodWorker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorForWoodWorker/Pods-CalculatorForWoodWorker.debug.xcconfig"; sourceTree = "<group>"; };
 		A47A69441C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorForWoodWorkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorForWoodWorkerUITests.swift; sourceTree = "<group>"; };
@@ -135,7 +140,6 @@
 				8B485A3E1EDD051C008F7864 /* ViewControllers */,
 				8B7D07081EDD2BA600151774 /* Views */,
 				8B7D07131EDE6AB900151774 /* ViewModels */,
-				8B7D071A1EDF9FE300151774 /* Rx */,
 				8B485A561EDD1540008F7864 /* Utils */,
 			);
 			path = Sources;
@@ -184,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */,
+				8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,15 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				8B7D07171EDE93FA00151774 /* SaiCalculatorViewModelTest.swift */,
+				8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		8B7D071A1EDF9FE300151774 /* Rx */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rx;
 			sourceTree = "<group>";
 		};
 		A47A69451C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */ = {
@@ -451,6 +450,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */,
+				8B7D07201EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift in Sources */,
+				8B7D07211EDFC46E00151774 /* InchMeterCalculatorViewModel.swift in Sources */,
 				8B7D07181EDE93FA00151774 /* SaiCalculatorViewModelTest.swift in Sources */,
 				8B7D07191EDE951500151774 /* SaiCalculatorViewModel.swift in Sources */,
 				A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */,
@@ -461,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7D071E1EDFC18100151774 /* InchMeterCalculatorViewModel.swift in Sources */,
 				8B485A581EDD1568008F7864 /* String+Localized.swift in Sources */,
 				8B7D07151EDE6C9800151774 /* SaiCalculatorViewModel.swift in Sources */,
 				8B7D070A1EDD2BD800151774 /* NumberInputCell.swift in Sources */,
