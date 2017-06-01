@@ -12,9 +12,6 @@
 		8B485A471EDD051C008F7864 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B485A351EDD051C008F7864 /* InfoPlist.strings */; };
 		8B485A481EDD051C008F7864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B485A371EDD051C008F7864 /* LaunchScreen.storyboard */; };
 		8B485A4A1EDD051C008F7864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A3C1EDD051C008F7864 /* AppDelegate.swift */; };
-		8B485A4B1EDD051C008F7864 /* TextFieldDelegateForNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A3D1EDD051C008F7864 /* TextFieldDelegateForNumber.swift */; };
-		8B485A4D1EDD051C008F7864 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A401EDD051C008F7864 /* CalculatorViewController.swift */; };
-		8B485A4E1EDD051C008F7864 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A411EDD051C008F7864 /* ConversionViewController.swift */; };
 		8B485A531EDD110F008F7864 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A521EDD110F008F7864 /* MainTabBarViewController.swift */; };
 		8B485A581EDD1568008F7864 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A571EDD1568008F7864 /* String+Localized.swift */; };
 		8B485A5B1EDD1A17008F7864 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B485A5D1EDD1A17008F7864 /* Localizable.strings */; };
@@ -30,8 +27,6 @@
 		8B7D071E1EDFC18100151774 /* InchMeterCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */; };
 		8B7D07201EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */; };
 		8B7D07211EDFC46E00151774 /* InchMeterCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */; };
-		A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */; };
-		A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */; };
 		ED1797F5E380022762485F3C /* Pods_CalculatorForWoodWorkerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8791A3ABEE3CD7ABCD5095CE /* Pods_CalculatorForWoodWorkerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +48,6 @@
 		8B485A361EDD051C008F7864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B485A381EDD051C008F7864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B485A3C1EDD051C008F7864 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B485A3D1EDD051C008F7864 /* TextFieldDelegateForNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegateForNumber.swift; sourceTree = "<group>"; };
-		8B485A401EDD051C008F7864 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
-		8B485A411EDD051C008F7864 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		8B485A451EDD051C008F7864 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B485A521EDD110F008F7864 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		8B485A551EDD1449008F7864 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -74,9 +66,7 @@
 		8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InchMeterCalculatorViewModelTests.swift; sourceTree = "<group>"; };
 		8C4E7D461D8173720181FD1F /* Pods-CalculatorForWoodWorker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorForWoodWorker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorForWoodWorker/Pods-CalculatorForWoodWorker.debug.xcconfig"; sourceTree = "<group>"; };
 		A47A69441C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorForWoodWorkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorForWoodWorkerUITests.swift; sourceTree = "<group>"; };
 		A47A69481C8D0E750066AD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		A4EEF0CF1C856CEF0039430A /* CalculatorForWoodWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorForWoodWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59985271A5FBE390458F5C3 /* Pods_CalculatorForWoodWorker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalculatorForWoodWorker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3323DE1BE03E3CA4FB4E8E7 /* Pods-CalculatorForWoodWorker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorForWoodWorker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorForWoodWorker/Pods-CalculatorForWoodWorker.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				8B485A3C1EDD051C008F7864 /* AppDelegate.swift */,
-				8B485A3D1EDD051C008F7864 /* TextFieldDelegateForNumber.swift */,
 				8B485A3E1EDD051C008F7864 /* ViewControllers */,
 				8B7D07081EDD2BA600151774 /* Views */,
 				8B7D07131EDE6AB900151774 /* ViewModels */,
@@ -148,8 +137,6 @@
 		8B485A3E1EDD051C008F7864 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B485A401EDD051C008F7864 /* CalculatorViewController.swift */,
-				8B485A411EDD051C008F7864 /* ConversionViewController.swift */,
 				8B485A521EDD110F008F7864 /* MainTabBarViewController.swift */,
 				8B485A5F1EDD20F9008F7864 /* SaiCalculatorViewController.swift */,
 				8B485A611EDD21BA008F7864 /* InchMeterCalculatorViewController.swift */,
@@ -206,8 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				8B7D07161EDE93E300151774 /* ViewModels */,
-				A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */,
-				A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */,
 				A47A69481C8D0E750066AD78 /* Info.plist */,
 			);
 			path = CalculatorForWoodWorkerUITests;
@@ -449,12 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */,
 				8B7D07201EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift in Sources */,
 				8B7D07211EDFC46E00151774 /* InchMeterCalculatorViewModel.swift in Sources */,
 				8B7D07181EDE93FA00151774 /* SaiCalculatorViewModelTest.swift in Sources */,
 				8B7D07191EDE951500151774 /* SaiCalculatorViewModel.swift in Sources */,
-				A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,10 +452,7 @@
 				8B485A531EDD110F008F7864 /* MainTabBarViewController.swift in Sources */,
 				8B7D07121EDD4E5F00151774 /* SettingViewController.swift in Sources */,
 				8B485A621EDD21BB008F7864 /* InchMeterCalculatorViewController.swift in Sources */,
-				8B485A4E1EDD051C008F7864 /* ConversionViewController.swift in Sources */,
-				8B485A4B1EDD051C008F7864 /* TextFieldDelegateForNumber.swift in Sources */,
 				8B485A601EDD20F9008F7864 /* SaiCalculatorViewController.swift in Sources */,
-				8B485A4D1EDD051C008F7864 /* CalculatorViewController.swift in Sources */,
 				8B485A4A1EDD051C008F7864 /* AppDelegate.swift in Sources */,
 				8B7D07101EDD428C00151774 /* LabelCellProtocol.swift in Sources */,
 				8B7D070C1EDD398E00151774 /* CalculationResultCell.swift in Sources */,
