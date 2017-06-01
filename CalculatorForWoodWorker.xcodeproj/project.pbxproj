@@ -135,6 +135,7 @@
 				8B485A3E1EDD051C008F7864 /* ViewControllers */,
 				8B7D07081EDD2BA600151774 /* Views */,
 				8B7D07131EDE6AB900151774 /* ViewModels */,
+				8B7D071A1EDF9FE300151774 /* Rx */,
 				8B485A561EDD1540008F7864 /* Utils */,
 			);
 			path = Sources;
@@ -193,6 +194,13 @@
 				8B7D07171EDE93FA00151774 /* SaiCalculatorViewModelTest.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B7D071A1EDF9FE300151774 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		A47A69451C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */ = {

@@ -33,7 +33,8 @@ class CalculationResultCell: UITableViewCell, LabelCellProtocol {
         $0.textAlignment = .left
     }
     
-     var name: String = "" {
+    // MARK: input
+    var name: String = "" {
         didSet {
             prevLabel.text = name
         }
@@ -42,6 +43,14 @@ class CalculationResultCell: UITableViewCell, LabelCellProtocol {
     var unit: String = "" {
         didSet {
             postLabel.text = unit
+        }
+    }
+    
+    var number: Double = 0 {
+        didSet {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            numberLabel.text = formatter.string(from: NSNumber(value: number))
         }
     }
 

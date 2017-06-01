@@ -15,10 +15,12 @@ import RxCocoa
 
 class SaiCalculatorViewController: UIViewController {
 
-    private let bag = DisposeBag()
+    fileprivate let bag = DisposeBag()
     
     private var tableView: UITableView!
     
+    fileprivate let viewModel = SaiCalculatorViewModel()
+
     override func viewDidLoad() {
         title = "SaiCalculatorNavigationTitle".localized
 
@@ -44,7 +46,8 @@ class SaiCalculatorViewController: UIViewController {
         
         view.addSubview(tableView)
     }
-}
+
+    }
 
 // MARK: Contents of table
 fileprivate let titleForHeaders = [
@@ -103,7 +106,43 @@ extension SaiCalculatorViewController: UITableViewDataSource {
         
         labels.name = cellProperties[indexPath.section][indexPath.row][0].localized
         labels.unit = cellProperties[indexPath.section][indexPath.row][1].localized
-
+        
+        switch (indexPath.section, indexPath.row) {
+        case (0, 0):
+            (cell as! NumberInputCell).number
+                .asObservable()
+                .bind(to: viewModel.width)
+                .addDisposableTo(bag)
+        case (0, 1):
+            (cell as! NumberInputCell).number
+                .asObservable()
+                .bind(to: viewModel.height)
+                .addDisposableTo(bag)
+        case (0, 2):
+            (cell as! NumberInputCell).number
+                .asObservable()
+                .bind(to: viewModel.length)
+                .addDisposableTo(bag)
+        case (0, 3):
+            (cell as! NumberInputCell).number
+                .asObservable()
+                .bind(to: viewModel.pricePerSai)
+                .addDisposableTo(bag)
+        case (1, 0):
+            viewModel.totalSai.asObservable()
+                .subscribe(onNext: { value in
+                    (cell as! CalculationResultCell).number = value
+                })
+                .addDisposableTo(bag)
+        case (1, 1):
+            viewModel.totalPrice.asObservable()
+                .subscribe(onNext: { value in
+                    (cell as! CalculationResultCell).number = Double(value)
+                })
+                .addDisposableTo(bag)
+        default: break
+        }
+        
         return cell
     }
 }

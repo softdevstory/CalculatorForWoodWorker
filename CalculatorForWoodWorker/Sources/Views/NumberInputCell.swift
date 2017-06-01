@@ -15,6 +15,8 @@ import RxCocoa
 
 class NumberInputCell: UITableViewCell, LabelCellProtocol {
 
+    private let bag = DisposeBag()
+    
     private let stackView = UIStackView().then {
         $0.axis = .horizontal
         $0.alignment = .center
@@ -36,6 +38,7 @@ class NumberInputCell: UITableViewCell, LabelCellProtocol {
         $0.textAlignment = .left
     }
     
+    // MARK: input
     var name: String = "" {
         didSet {
             prevLabel.text = name
@@ -47,6 +50,9 @@ class NumberInputCell: UITableViewCell, LabelCellProtocol {
             postLabel.text = unit
         }
     }
+
+    // MARK: output
+    var number = Variable<Double>(0.0)
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .value1, reuseIdentifier: reuseIdentifier)
@@ -60,16 +66,59 @@ class NumberInputCell: UITableViewCell, LabelCellProtocol {
         }
         
         stackView.addArrangedSubview(prevLabel)
+        stackView.addArrangedSubview(textField)
+        stackView.addArrangedSubview(postLabel)
         
         textField.text = "0"
-
-        stackView.addArrangedSubview(textField)
-
-        stackView.addArrangedSubview(postLabel)
+        textField.delegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+}
+
+// MARK: UITextFieldDelegate
+extension NumberInputCell: UITextFieldDelegate {
+    
+    func checkValidNumber(_ string: String) -> Bool {
+        if let _ = Double(string) {
+            return true
+        }
+
+        return false;
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        var newString = (textField.text! as NSString).replacingCharacters(in: range, with: string)
+        if newString == "" {
+            newString = "0"
+        }
+        let numberString = newString.replacingOccurrences(of: ",", with: "")
+
+        guard checkValidNumber(numberString) else {
+            return false
+        }
+
+        number.value = Double(numberString) ?? 0
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        
+        if numberString.hasSuffix(".") {
+            formatter.positiveFormat = "#,##0.###"
+            textField.text = formatter.string(from: NSNumber(value: number.value))! + "."
+        } else {
+            if numberString.contains(".") {
+                formatter.positiveFormat = "#,##0.0##"
+            } else {
+                formatter.positiveFormat = "#,##0.###"
+            }
+            textField.text = formatter.string(from: NSNumber(value: number.value))
+        }
+
+        return false
+    }
 }
