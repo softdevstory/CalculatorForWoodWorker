@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A41204F11C8736F000055388 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F01C8736F000055388 /* SettingTableViewController.swift */; };
-		A41204F31C87CC1F00055388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41204F21C87CC1F00055388 /* Assets.xcassets */; };
-		A41204F51C87CD2600055388 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F41C87CD2600055388 /* LicenseViewController.swift */; };
-		A41204F71C87CDA700055388 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41204F61C87CDA700055388 /* AboutViewController.swift */; };
-		A41204FA1C87F87000055388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A41204FC1C87F87000055388 /* InfoPlist.strings */; };
-		A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */; };
-		A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */; };
-		A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0D21C856CEF0039430A /* AppDelegate.swift */; };
-		A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0D61C856CEF0039430A /* Main.storyboard */; };
-		A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */; };
-		A4EEF0E51C857F510039430A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0E41C857F510039430A /* CalculatorViewController.swift */; };
-		A4EEF0E71C868EAB0039430A /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0E61C868EAB0039430A /* ConversionViewController.swift */; };
-		A4EEF0E91C8697DF0039430A /* TextFieldDelegateForNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EEF0E81C8697DF0039430A /* TextFieldDelegateForNumber.swift */; };
+		0C4B05E3B0484B83A90D4D16 /* Pods_CalculatorForWoodWorker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59985271A5FBE390458F5C3 /* Pods_CalculatorForWoodWorker.framework */; };
+		8B485A461EDD051C008F7864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B485A341EDD051C008F7864 /* Assets.xcassets */; };
+		8B485A471EDD051C008F7864 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B485A351EDD051C008F7864 /* InfoPlist.strings */; };
+		8B485A481EDD051C008F7864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B485A371EDD051C008F7864 /* LaunchScreen.storyboard */; };
+		8B485A4A1EDD051C008F7864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A3C1EDD051C008F7864 /* AppDelegate.swift */; };
+		8B485A531EDD110F008F7864 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A521EDD110F008F7864 /* MainTabBarViewController.swift */; };
+		8B485A581EDD1568008F7864 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A571EDD1568008F7864 /* String+Localized.swift */; };
+		8B485A5B1EDD1A17008F7864 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B485A5D1EDD1A17008F7864 /* Localizable.strings */; };
+		8B485A601EDD20F9008F7864 /* SaiCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A5F1EDD20F9008F7864 /* SaiCalculatorViewController.swift */; };
+		8B485A621EDD21BB008F7864 /* InchMeterCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B485A611EDD21BA008F7864 /* InchMeterCalculatorViewController.swift */; };
+		8B7D070A1EDD2BD800151774 /* NumberInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07091EDD2BD800151774 /* NumberInputCell.swift */; };
+		8B7D070C1EDD398E00151774 /* CalculationResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D070B1EDD398E00151774 /* CalculationResultCell.swift */; };
+		8B7D07101EDD428C00151774 /* LabelCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D070F1EDD428C00151774 /* LabelCellProtocol.swift */; };
+		8B7D07121EDD4E5F00151774 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07111EDD4E5F00151774 /* SettingViewController.swift */; };
+		8B7D07151EDE6C9800151774 /* SaiCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */; };
+		8B7D07181EDE93FA00151774 /* SaiCalculatorViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07171EDE93FA00151774 /* SaiCalculatorViewModelTest.swift */; };
+		8B7D07191EDE951500151774 /* SaiCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */; };
+		8B7D071E1EDFC18100151774 /* InchMeterCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */; };
+		8B7D07201EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */; };
+		8B7D07211EDFC46E00151774 /* InchMeterCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */; };
+		ED1797F5E380022762485F3C /* Pods_CalculatorForWoodWorkerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8791A3ABEE3CD7ABCD5095CE /* Pods_CalculatorForWoodWorkerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,23 +41,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A41204F01C8736F000055388 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
-		A41204F21C87CC1F00055388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A41204F41C87CD2600055388 /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
-		A41204F61C87CDA700055388 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		A41204FB1C87F87000055388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F65E4010C9D6316530DEA0A /* Pods-CalculatorForWoodWorkerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorForWoodWorkerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorForWoodWorkerUITests/Pods-CalculatorForWoodWorkerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D23F608E29C6B6B34505732 /* Pods-CalculatorForWoodWorkerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorForWoodWorkerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorForWoodWorkerUITests/Pods-CalculatorForWoodWorkerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8791A3ABEE3CD7ABCD5095CE /* Pods_CalculatorForWoodWorkerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalculatorForWoodWorkerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B485A341EDD051C008F7864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B485A361EDD051C008F7864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B485A381EDD051C008F7864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B485A3C1EDD051C008F7864 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B485A451EDD051C008F7864 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B485A521EDD110F008F7864 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		8B485A551EDD1449008F7864 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B485A571EDD1568008F7864 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		8B485A5C1EDD1A17008F7864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B485A5E1EDD1A19008F7864 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B485A5F1EDD20F9008F7864 /* SaiCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaiCalculatorViewController.swift; sourceTree = "<group>"; };
+		8B485A611EDD21BA008F7864 /* InchMeterCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InchMeterCalculatorViewController.swift; sourceTree = "<group>"; };
+		8B7D07091EDD2BD800151774 /* NumberInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberInputCell.swift; sourceTree = "<group>"; };
+		8B7D070B1EDD398E00151774 /* CalculationResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationResultCell.swift; sourceTree = "<group>"; };
+		8B7D070F1EDD428C00151774 /* LabelCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCellProtocol.swift; sourceTree = "<group>"; };
+		8B7D07111EDD4E5F00151774 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaiCalculatorViewModel.swift; sourceTree = "<group>"; };
+		8B7D07171EDE93FA00151774 /* SaiCalculatorViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaiCalculatorViewModelTest.swift; sourceTree = "<group>"; };
+		8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InchMeterCalculatorViewModel.swift; sourceTree = "<group>"; };
+		8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InchMeterCalculatorViewModelTests.swift; sourceTree = "<group>"; };
+		8C4E7D461D8173720181FD1F /* Pods-CalculatorForWoodWorker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorForWoodWorker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorForWoodWorker/Pods-CalculatorForWoodWorker.debug.xcconfig"; sourceTree = "<group>"; };
 		A47A69441C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorForWoodWorkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorForWoodWorkerUITests.swift; sourceTree = "<group>"; };
 		A47A69481C8D0E750066AD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		A4EEF0CF1C856CEF0039430A /* CalculatorForWoodWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorForWoodWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4EEF0D21C856CEF0039430A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4EEF0D71C856CEF0039430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A4EEF0DC1C856CEF0039430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4EEF0DE1C856CEF0039430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4EEF0E41C857F510039430A /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
-		A4EEF0E61C868EAB0039430A /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
-		A4EEF0E81C8697DF0039430A /* TextFieldDelegateForNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegateForNumber.swift; sourceTree = "<group>"; };
+		B59985271A5FBE390458F5C3 /* Pods_CalculatorForWoodWorker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalculatorForWoodWorker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3323DE1BE03E3CA4FB4E8E7 /* Pods-CalculatorForWoodWorker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorForWoodWorker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorForWoodWorker/Pods-CalculatorForWoodWorker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1797F5E380022762485F3C /* Pods_CalculatorForWoodWorkerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,17 +85,114 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4B05E3B0484B83A90D4D16 /* Pods_CalculatorForWoodWorker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F7695B7B08B5349EDA28F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B59985271A5FBE390458F5C3 /* Pods_CalculatorForWoodWorker.framework */,
+				8791A3ABEE3CD7ABCD5095CE /* Pods_CalculatorForWoodWorkerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B485A321EDD051C008F7864 /* CalculatorForWoodWorker */ = {
+			isa = PBXGroup;
+			children = (
+				8B485A3B1EDD051C008F7864 /* Sources */,
+				8B485A331EDD051C008F7864 /* Resources */,
+				8B485A441EDD051C008F7864 /* Supporting Files */,
+			);
+			path = CalculatorForWoodWorker;
+			sourceTree = "<group>";
+		};
+		8B485A331EDD051C008F7864 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B485A341EDD051C008F7864 /* Assets.xcassets */,
+				8B485A371EDD051C008F7864 /* LaunchScreen.storyboard */,
+				8B485A351EDD051C008F7864 /* InfoPlist.strings */,
+				8B485A5D1EDD1A17008F7864 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B485A3B1EDD051C008F7864 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8B485A3C1EDD051C008F7864 /* AppDelegate.swift */,
+				8B485A3E1EDD051C008F7864 /* ViewControllers */,
+				8B7D07081EDD2BA600151774 /* Views */,
+				8B7D07131EDE6AB900151774 /* ViewModels */,
+				8B485A561EDD1540008F7864 /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8B485A3E1EDD051C008F7864 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B485A521EDD110F008F7864 /* MainTabBarViewController.swift */,
+				8B485A5F1EDD20F9008F7864 /* SaiCalculatorViewController.swift */,
+				8B485A611EDD21BA008F7864 /* InchMeterCalculatorViewController.swift */,
+				8B7D07111EDD4E5F00151774 /* SettingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8B485A441EDD051C008F7864 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B485A451EDD051C008F7864 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B485A561EDD1540008F7864 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B485A571EDD1568008F7864 /* String+Localized.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8B7D07081EDD2BA600151774 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B7D07091EDD2BD800151774 /* NumberInputCell.swift */,
+				8B7D070B1EDD398E00151774 /* CalculationResultCell.swift */,
+				8B7D070F1EDD428C00151774 /* LabelCellProtocol.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B7D07131EDE6AB900151774 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B7D07141EDE6C9800151774 /* SaiCalculatorViewModel.swift */,
+				8B7D071D1EDFC18100151774 /* InchMeterCalculatorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B7D07161EDE93E300151774 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B7D07171EDE93FA00151774 /* SaiCalculatorViewModelTest.swift */,
+				8B7D071F1EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A47A69451C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A47A694E1C8D0EBD0066AD78 /* SnapshotHelper.swift */,
-				A47A69461C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift */,
+				8B7D07161EDE93E300151774 /* ViewModels */,
 				A47A69481C8D0E750066AD78 /* Info.plist */,
 			);
 			path = CalculatorForWoodWorkerUITests;
@@ -83,9 +201,11 @@
 		A4EEF0C61C856CEF0039430A = {
 			isa = PBXGroup;
 			children = (
-				A4EEF0D11C856CEF0039430A /* CalculatorForWoodWorker */,
+				8B485A321EDD051C008F7864 /* CalculatorForWoodWorker */,
 				A47A69451C8D0E750066AD78 /* CalculatorForWoodWorkerUITests */,
 				A4EEF0D01C856CEF0039430A /* Products */,
+				D96E1F75500D38B060F32693 /* Pods */,
+				22F7695B7B08B5349EDA28F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,23 +218,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4EEF0D11C856CEF0039430A /* CalculatorForWoodWorker */ = {
+		D96E1F75500D38B060F32693 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A41204F21C87CC1F00055388 /* Assets.xcassets */,
-				A4EEF0D21C856CEF0039430A /* AppDelegate.swift */,
-				A4EEF0D61C856CEF0039430A /* Main.storyboard */,
-				A41204F61C87CDA700055388 /* AboutViewController.swift */,
-				A41204F01C8736F000055388 /* SettingTableViewController.swift */,
-				A41204F41C87CD2600055388 /* LicenseViewController.swift */,
-				A4EEF0E61C868EAB0039430A /* ConversionViewController.swift */,
-				A4EEF0E41C857F510039430A /* CalculatorViewController.swift */,
-				A4EEF0E81C8697DF0039430A /* TextFieldDelegateForNumber.swift */,
-				A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */,
-				A4EEF0DE1C856CEF0039430A /* Info.plist */,
-				A41204FC1C87F87000055388 /* InfoPlist.strings */,
+				8C4E7D461D8173720181FD1F /* Pods-CalculatorForWoodWorker.debug.xcconfig */,
+				F3323DE1BE03E3CA4FB4E8E7 /* Pods-CalculatorForWoodWorker.release.xcconfig */,
+				4D23F608E29C6B6B34505732 /* Pods-CalculatorForWoodWorkerUITests.debug.xcconfig */,
+				2F65E4010C9D6316530DEA0A /* Pods-CalculatorForWoodWorkerUITests.release.xcconfig */,
 			);
-			path = CalculatorForWoodWorker;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A47A694B1C8D0E750066AD78 /* Build configuration list for PBXNativeTarget "CalculatorForWoodWorkerUITests" */;
 			buildPhases = (
+				169B3DFFE024BAA31EAB40E0 /* [CP] Check Pods Manifest.lock */,
 				A47A69401C8D0E750066AD78 /* Sources */,
 				A47A69411C8D0E750066AD78 /* Frameworks */,
 				A47A69421C8D0E750066AD78 /* Resources */,
+				A8EB4C2B7EDC3899FECE72D4 /* [CP] Embed Pods Frameworks */,
+				F43873A637CF0BFBB6A3A570 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4EEF0E11C856CEF0039430A /* Build configuration list for PBXNativeTarget "CalculatorForWoodWorker" */;
 			buildPhases = (
+				ED74C590A04E350589A1ED31 /* [CP] Check Pods Manifest.lock */,
 				A4EEF0CB1C856CEF0039430A /* Sources */,
 				A4EEF0CC1C856CEF0039430A /* Frameworks */,
 				A4EEF0CD1C856CEF0039430A /* Resources */,
+				8F3450C76EA03097738D23DF /* [CP] Embed Pods Frameworks */,
+				E9462823BA50EE9DEF3E11B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +302,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = A4EEF0C61C856CEF0039430A;
 			productRefGroup = A4EEF0D01C856CEF0039430A /* Products */;
@@ -208,22 +327,117 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4EEF0DD1C856CEF0039430A /* LaunchScreen.storyboard in Resources */,
-				A41204FA1C87F87000055388 /* InfoPlist.strings in Resources */,
-				A41204F31C87CC1F00055388 /* Assets.xcassets in Resources */,
-				A4EEF0D81C856CEF0039430A /* Main.storyboard in Resources */,
+				8B485A5B1EDD1A17008F7864 /* Localizable.strings in Resources */,
+				8B485A481EDD051C008F7864 /* LaunchScreen.storyboard in Resources */,
+				8B485A461EDD051C008F7864 /* Assets.xcassets in Resources */,
+				8B485A471EDD051C008F7864 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		169B3DFFE024BAA31EAB40E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F3450C76EA03097738D23DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorForWoodWorker/Pods-CalculatorForWoodWorker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8EB4C2B7EDC3899FECE72D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorForWoodWorkerUITests/Pods-CalculatorForWoodWorkerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9462823BA50EE9DEF3E11B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorForWoodWorker/Pods-CalculatorForWoodWorker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED74C590A04E350589A1ED31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F43873A637CF0BFBB6A3A570 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorForWoodWorkerUITests/Pods-CalculatorForWoodWorkerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A47A69401C8D0E750066AD78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A47A69471C8D0E750066AD78 /* CalculatorForWoodWorkerUITests.swift in Sources */,
-				A47A694F1C8D0EBD0066AD78 /* SnapshotHelper.swift in Sources */,
+				8B7D07201EDFC42E00151774 /* InchMeterCalculatorViewModelTests.swift in Sources */,
+				8B7D07211EDFC46E00151774 /* InchMeterCalculatorViewModel.swift in Sources */,
+				8B7D07181EDE93FA00151774 /* SaiCalculatorViewModelTest.swift in Sources */,
+				8B7D07191EDE951500151774 /* SaiCalculatorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,13 +445,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4EEF0E51C857F510039430A /* CalculatorViewController.swift in Sources */,
-				A4EEF0E71C868EAB0039430A /* ConversionViewController.swift in Sources */,
-				A4EEF0E91C8697DF0039430A /* TextFieldDelegateForNumber.swift in Sources */,
-				A41204F71C87CDA700055388 /* AboutViewController.swift in Sources */,
-				A4EEF0D31C856CEF0039430A /* AppDelegate.swift in Sources */,
-				A41204F51C87CD2600055388 /* LicenseViewController.swift in Sources */,
-				A41204F11C8736F000055388 /* SettingTableViewController.swift in Sources */,
+				8B7D071E1EDFC18100151774 /* InchMeterCalculatorViewModel.swift in Sources */,
+				8B485A581EDD1568008F7864 /* String+Localized.swift in Sources */,
+				8B7D07151EDE6C9800151774 /* SaiCalculatorViewModel.swift in Sources */,
+				8B7D070A1EDD2BD800151774 /* NumberInputCell.swift in Sources */,
+				8B485A531EDD110F008F7864 /* MainTabBarViewController.swift in Sources */,
+				8B7D07121EDD4E5F00151774 /* SettingViewController.swift in Sources */,
+				8B485A621EDD21BB008F7864 /* InchMeterCalculatorViewController.swift in Sources */,
+				8B485A601EDD20F9008F7864 /* SaiCalculatorViewController.swift in Sources */,
+				8B485A4A1EDD051C008F7864 /* AppDelegate.swift in Sources */,
+				8B7D07101EDD428C00151774 /* LabelCellProtocol.swift in Sources */,
+				8B7D070C1EDD398E00151774 /* CalculationResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,28 +470,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A41204FC1C87F87000055388 /* InfoPlist.strings */ = {
+		8B485A351EDD051C008F7864 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A41204FB1C87F87000055388 /* Base */,
+				8B485A361EDD051C008F7864 /* Base */,
+				8B485A551EDD1449008F7864 /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		A4EEF0D61C856CEF0039430A /* Main.storyboard */ = {
+		8B485A371EDD051C008F7864 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A4EEF0D71C856CEF0039430A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A4EEF0DB1C856CEF0039430A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4EEF0DC1C856CEF0039430A /* Base */,
+				8B485A381EDD051C008F7864 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8B485A5D1EDD1A17008F7864 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B485A5C1EDD1A17008F7864 /* Base */,
+				8B485A5E1EDD1A19008F7864 /* ko */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,7 +501,9 @@
 /* Begin XCBuildConfiguration section */
 		A47A694C1C8D0E750066AD78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D23F608E29C6B6B34505732 /* Pods-CalculatorForWoodWorkerUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CalculatorForWoodWorkerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -295,7 +517,9 @@
 		};
 		A47A694D1C8D0E750066AD78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F65E4010C9D6316530DEA0A /* Pods-CalculatorForWoodWorkerUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CalculatorForWoodWorkerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -311,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -357,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -395,11 +621,12 @@
 		};
 		A4EEF0E21C856CEF0039430A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4E7D461D8173720181FD1F /* Pods-CalculatorForWoodWorker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = MGW797GVB2;
-				INFOPLIST_FILE = CalculatorForWoodWorker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorForWoodWorker/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.softdevstory.CalculatorForWoodWorker;
@@ -410,11 +637,12 @@
 		};
 		A4EEF0E31C856CEF0039430A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3323DE1BE03E3CA4FB4E8E7 /* Pods-CalculatorForWoodWorker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = MGW797GVB2;
-				INFOPLIST_FILE = CalculatorForWoodWorker/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorForWoodWorker/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.softdevstory.CalculatorForWoodWorker;
