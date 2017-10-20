@@ -44,7 +44,7 @@ class SettingViewController: UIViewController {
             .subscribe(onNext: { _ in
                 self.dismiss(animated: true, completion: nil)
             })
-            .addDisposableTo(bag)
+            .disposed(by: bag)
         
         view.addSubview(logoImageView)
         view.addSubview(versionLabel)
@@ -67,7 +67,7 @@ class SettingViewController: UIViewController {
                     }
                 }
             })
-            .addDisposableTo(bag)
+            .disposed(by: bag)
         
         view.addSubview(tableView)
         

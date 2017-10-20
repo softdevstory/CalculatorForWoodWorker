@@ -33,7 +33,7 @@ class InchMeterCalculatorViewController: UIViewController {
                 let vc = UINavigationController(rootViewController: SettingViewController())
                 self.present(vc, animated: true, completion: nil)
             })
-            .addDisposableTo(bag)
+            .disposed(by: bag)
 
         tableView = UITableView(frame: view.frame, style: .grouped).then {
             $0.separatorStyle = .none
@@ -113,36 +113,36 @@ extension InchMeterCalculatorViewController: UITableViewDataSource {
             (cell as! NumberInputCell).number
                 .asObservable()
                 .bind(to: viewModel.feet)
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (0, 1):
             (cell as! NumberInputCell).number
                 .asObservable()
                 .bind(to: viewModel.inch)
-                .addDisposableTo(bag)
+                .disposed(by: bag)
 
         case (0, 2):
             viewModel.milimeterResult.asObservable()
                 .subscribe(onNext: { value in
                     (cell as! CalculationResultCell).number = value
                 })
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (1, 0):
             (cell as! NumberInputCell).number
                 .asObservable()
                 .bind(to: viewModel.milimeter)
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (1, 1):
           viewModel.feetResult.asObservable()
                 .subscribe(onNext: { value in
                     (cell as! CalculationResultCell).number = value
                 })
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (1, 2):
           viewModel.inchResult.asObservable()
                 .subscribe(onNext: { value in
                     (cell as! CalculationResultCell).number = value
                 })
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         default: break
         }
         

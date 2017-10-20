@@ -37,6 +37,6 @@ class SaiCalculatorViewModel {
             self.totalSai.value = totalSai
             self.totalPrice.value = totalPrice
         })
-        .addDisposableTo(bag)
+        .disposed(by: bag)
     }
 }
