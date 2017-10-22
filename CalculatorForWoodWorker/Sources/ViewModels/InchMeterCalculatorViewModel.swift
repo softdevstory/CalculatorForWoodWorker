@@ -31,7 +31,7 @@ class InchMeterCalculatorViewModel {
         .subscribe(onNext: { milimeter in
             self.milimeterResult.value = milimeter
         })
-        .addDisposableTo(bag)
+        .disposed(by: bag)
         
         // milimeter -> feet, inch
         milimeter.asObservable()
@@ -40,6 +40,6 @@ class InchMeterCalculatorViewModel {
                 self.feetResult.value = floor(milimeter / 304.8)
                 self.inchResult.value = (milimeter - (self.feetResult.value * 304.8)) / 25.4
             })
-            .addDisposableTo(bag)
+            .disposed(by: bag)
     }
 }

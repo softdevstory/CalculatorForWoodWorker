@@ -44,7 +44,7 @@ class SettingViewController: UIViewController {
             .subscribe(onNext: { _ in
                 self.dismiss(animated: true, completion: nil)
             })
-            .addDisposableTo(bag)
+            .disposed(by: bag)
         
         view.addSubview(logoImageView)
         view.addSubview(versionLabel)
@@ -55,6 +55,9 @@ class SettingViewController: UIViewController {
             $0.keyboardDismissMode = .onDrag
             $0.dataSource = self
             
+            // same works like iOS 10
+            $0.estimatedRowHeight = 0
+
             $0.register(UITableViewCell.self, forCellReuseIdentifier: "Basic")
         }
 
@@ -67,7 +70,7 @@ class SettingViewController: UIViewController {
                     }
                 }
             })
-            .addDisposableTo(bag)
+            .disposed(by: bag)
         
         view.addSubview(tableView)
         

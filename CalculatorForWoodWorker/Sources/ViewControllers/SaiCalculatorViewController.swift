@@ -32,13 +32,16 @@ class SaiCalculatorViewController: UIViewController {
                 let vc = UINavigationController(rootViewController: SettingViewController())
                 self.present(vc, animated: true, completion: nil)
             })
-            .addDisposableTo(bag)
+            .disposed(by: bag)
         
         tableView = UITableView(frame: view.frame, style: .grouped).then {
             $0.separatorStyle = .none
             $0.keyboardDismissMode = .onDrag
             $0.allowsSelection = false
             $0.dataSource = self
+            
+            // same works like iOS 10
+            $0.estimatedRowHeight = 0
             
             $0.register(NumberInputCell.self, forCellReuseIdentifier: "NumberInputCell")
             $0.register(CalculationResultCell.self, forCellReuseIdentifier: "CalculationResultCell")
@@ -112,34 +115,34 @@ extension SaiCalculatorViewController: UITableViewDataSource {
             (cell as! NumberInputCell).number
                 .asObservable()
                 .bind(to: viewModel.width)
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (0, 1):
             (cell as! NumberInputCell).number
                 .asObservable()
                 .bind(to: viewModel.height)
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (0, 2):
             (cell as! NumberInputCell).number
                 .asObservable()
                 .bind(to: viewModel.length)
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (0, 3):
             (cell as! NumberInputCell).number
                 .asObservable()
                 .bind(to: viewModel.pricePerSai)
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (1, 0):
             viewModel.totalSai.asObservable()
                 .subscribe(onNext: { value in
                     (cell as! CalculationResultCell).number = value
                 })
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         case (1, 1):
             viewModel.totalPrice.asObservable()
                 .subscribe(onNext: { value in
                     (cell as! CalculationResultCell).number = Double(value)
                 })
-                .addDisposableTo(bag)
+                .disposed(by: bag)
         default: break
         }
         
