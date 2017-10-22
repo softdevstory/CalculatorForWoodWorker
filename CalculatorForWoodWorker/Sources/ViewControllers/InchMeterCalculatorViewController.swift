@@ -41,6 +41,9 @@ class InchMeterCalculatorViewController: UIViewController {
             $0.allowsSelection = false
             $0.dataSource = self
             
+            // same works like iOS 10
+            $0.estimatedRowHeight = 0
+            
             $0.register(NumberInputCell.self, forCellReuseIdentifier: "NumberInputCell")
             $0.register(CalculationResultCell.self, forCellReuseIdentifier: "CalculationResultCell")
         }
